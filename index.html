@@ -4,9 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning forms</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class="main">
+        <div class="main-image">
+          <img src="dd.jpg" alt="delivery-man">
+        </div>
+        <div class="main-content">
+           <div class="header">
+            <h1 class="join">Join us today</h2>
+           </div>
+           <div class="content">
+            <h1 class="action">Let's do this!</h1>
+            <form id="main-form" action="index.html" method="get">
+                <div class="form-element">
+                    <label for="first_name">FIRST NAME</label>
+                    <input type="text" id="first_name" name="first_name" minlength="1" required placeholder="John" pattern="^[a-zA-Z]+$">
+                </div>
+                <div class="form-element">
+                    <label for="last_name">LAST NAME</label>
+                    <input type="text" id="last_name" name="last_name" minlength="1" required placeholder="Wick" pattern="^[a-zA-Z]+$">
+                </div>
+                <div class="form-element">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email" placeholder="john.wick@example.com">
+                </div>
+                <div class="form-element">
+                    <label for="phone">PHONE</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-element">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="form-element">
+                    <label for="confirm-password">CONFIRM PASSWORD</label>
+                    <input type="password" name="confirm-password" id="confirm-password">
+                </div>
+            </form>
+            <button type="submit" id="submit-form" form="main-form">Join Today</button>
+           </div>
+           <div class="footer"></div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
